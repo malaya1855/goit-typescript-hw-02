@@ -7,7 +7,10 @@ type Page = {
   likes: number,
   acconts: string[],
   status: 'open' | 'close'
-  details?: object,
+  details?: {
+    createAt: Date,
+    updateAt:Date,
+  },
 }
 
 const page1 = {
@@ -29,3 +32,4 @@ const page2 = {
 }
 
 export {};
+
